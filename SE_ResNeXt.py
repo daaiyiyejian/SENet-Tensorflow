@@ -7,7 +7,7 @@ import numpy as np
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = 'PCI_BUS_ID'
-os.environ["CUDA_VISIBLE_DEVICES"] = '2'
+os.environ["CUDA_VISIBLE_DEVICES"] = '2'      # GPU numbers
 os.environ['TF_CUDNN_USE_AUTOTUNE'] = '0'
 
 weight_decay = 0.0005
