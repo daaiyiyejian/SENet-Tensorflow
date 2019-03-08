@@ -233,6 +233,11 @@ with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
 
     summary_writer = tf.summary.FileWriter('./logs', sess.graph)
+    
+    # check tensor name and shape
+    # op = sess.graph.get_operations()
+    # for m in op:
+    #     print(m.values())
 
     epoch_learning_rate = init_learning_rate
     for epoch in range(1, total_epochs + 1):
